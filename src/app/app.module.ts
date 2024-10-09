@@ -30,7 +30,4 @@ import { AngularFirestoreModule } from "@angular/fire/compat/firestore";
           ])
     ]
 })
-export class AppModule {
-    static forRoot: any;
-
-}
+export class AppModule {}

@@ -1,0 +1,20 @@
+<h1 class="text-center">Save And Secure Your Documents</h1>
+<div class="container-fluid">
+    <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+        <div class="form-group mb-3">
+            <label for="documentName" class="form-label">Document Provided</label>
+            <input type="text" class="form-control" id="documentName" name="documentName" ngModel>
+        </div>
+        <div class="form-group mb-3">
+            <label for="uploadDocument" class="form-label">Upload Document</label>
+            <input class="form-control" type="file" id="uploadDocument" multiple (change)="onFileChange($event)" name="uploadDocument" ngModel>
+        </div>
+        <div class="mb-3">
+            <img [src]="url" height="200">
+        </div>
+        <div class="mb-3">
+            <img *ngFor="let url of urls" [src]="url" height="200">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
