@@ -9,6 +9,7 @@ import { firebaseConfig } from "./constants/constants";
 import { AngularFireAuthModule } from "@angular/fire/compat/auth";
 import { AngularFireDatabaseModule } from "@angular/fire/compat/database";
 import { AngularFirestoreModule } from "@angular/fire/compat/firestore";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
     declarations: [
@@ -20,6 +21,7 @@ import { AngularFirestoreModule } from "@angular/fire/compat/firestore";
         CommonModule,
         BrowserModule,
         HomeModule,
+        FormsModule
     ],
     providers: [
         importProvidersFrom([
